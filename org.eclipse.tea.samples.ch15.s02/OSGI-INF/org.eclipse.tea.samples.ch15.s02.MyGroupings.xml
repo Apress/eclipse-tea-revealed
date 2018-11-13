@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="org.eclipse.tea.samples.ch15.s02.MyGroupings">
+   <service>
+      <provide interface="org.eclipse.tea.core.services.TaskingMenuDecoration"/>
+   </service>
+   <implementation class="org.eclipse.tea.samples.ch15.s02.MyGroupings"/>
+</scr:component>

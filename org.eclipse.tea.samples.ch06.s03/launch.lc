@@ -1,0 +1,15 @@
+eclipse configuration CH06-Lifecycle {
+	product org.eclipse.tea.core.ui.HeadlessTaskingEngine;
+	
+	feature org.eclipse.tea.core_feature;
+	feature org.eclipse.tea.ui_feature;
+	
+	feature org.eclipse.sdk;
+	
+	plugin org.eclipse.tea.samples.ch06.s03;
+	
+	argument "-taskchain" "CH06LifeCycle";
+	vm-argument "-Drestart=true";
+	
+	workspace "${workspace_loc}/runtime-ws/ch06-lc";
+}

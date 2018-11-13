@@ -1,0 +1,20 @@
+eclipse configuration CH02-IDE {
+	product org.eclipse.sdk.ide;
+	
+	feature org.eclipse.tea.core_feature;
+	feature org.eclipse.tea.ui_feature;
+	
+	feature org.eclipse.sdk;
+	
+	plugin org.eclipse.tea.samples.ch02.s01;
+	
+	workspace "${workspace_loc}/runtime-ws/ch02";
+}
+
+eclipse configuration CH02-Headless : CH02-IDE {
+	product org.eclipse.tea.core.ui.HeadlessTaskingEngine;
+	
+	argument "-taskchain" "FirstTaskChain";
+	
+	workspace "${workspace_loc}/runtime-ws/ch02-hl";
+}

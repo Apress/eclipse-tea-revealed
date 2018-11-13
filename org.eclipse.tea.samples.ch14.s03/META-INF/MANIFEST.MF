@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LcDsl Sample 3
+Bundle-SymbolicName: org.eclipse.tea.samples.ch14.s03
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.eclipse.tea.samples.ch14.s03
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.eclipse.tea.ease;bundle-version="1.0.0",
+ org.eclipse.tea.core;bundle-version="1.0.0",
+ org.eclipse.core.runtime;bundle-version="3.13.0",
+ org.eclipse.core.resources;bundle-version="3.12.0",
+ org.eclipse.e4.core.di;bundle-version="1.6.100",
+ org.eclipse.debug.ui.launchview;bundle-version="1.0.0",
+ com.wamas.ide.launching.ui;bundle-version="0.1.2",
+ com.wamas.ide.launching;bundle-version="0.1.2"
+Bundle-ActivationPolicy: lazy
+Service-Component: OSGI-INF/org.eclipse.tea.samples.ch14.s03.TaskChainRunSomething.xml

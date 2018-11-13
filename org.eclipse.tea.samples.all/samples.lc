@@ -1,0 +1,25 @@
+eclipse configuration TEA-Book-Samples {
+	product org.eclipse.sdk.ide;
+	
+	feature org.eclipse.tea.core_feature;
+	feature org.eclipse.tea.lcdsl.library_feature;
+	feature org.eclipse.tea.library_feature;
+	feature org.eclipse.tea.ui_feature;
+	feature org.eclipse.tea.scripting_feature;
+	
+	feature com.wamas.ide.launchview.feature;
+	feature com.wamas.ide.launching.feature;
+	
+	feature org.eclipse.ease.feature;
+	feature org.eclipse.ease.python.jython.feature;
+	
+	feature org.eclipse.pde;
+	feature org.eclipse.jdt;
+	
+	feature org.eclipse.sdk;
+	
+	optional feature org.eclipse.e4.tools.spies.feature;
+	optional feature org.eclipse.tea.samples.all;
+	
+	workspace "${workspace_loc}/runtime-ws/tea-book";
+}

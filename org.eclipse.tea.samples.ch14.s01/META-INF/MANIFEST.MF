@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: LcDsl Sample
+Bundle-SymbolicName: org.eclipse.tea.samples.ch14.s01
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: org.eclipse.tea.samples.ch14.s01
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8

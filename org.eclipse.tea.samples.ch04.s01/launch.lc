@@ -1,0 +1,20 @@
+eclipse configuration CH04-IDE {
+	product org.eclipse.sdk.ide;
+	
+	feature org.eclipse.tea.core_feature;
+	feature org.eclipse.tea.ui_feature;
+	
+	feature org.eclipse.sdk;
+	
+	plugin org.eclipse.tea.samples.ch04.s01;
+	
+	workspace "${workspace_loc}/runtime-ws/ch04";
+}
+
+eclipse configuration CH04-Headless : CH04-IDE {
+	product org.eclipse.tea.core.ui.HeadlessTaskingEngine;
+	
+	argument "-taskchain" "CH04TaskChain";
+	
+	workspace "${workspace_loc}/runtime-ws/ch04-hl";
+}

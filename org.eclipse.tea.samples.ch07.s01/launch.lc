@@ -1,0 +1,13 @@
+eclipse configuration CH07-Config {
+	product org.eclipse.tea.core.ui.HeadlessTaskingEngine;
+	
+	feature org.eclipse.tea.core_feature;
+	feature org.eclipse.tea.ui_feature;
+	feature org.eclipse.sdk;
+	
+	plugin org.eclipse.tea.samples.ch07.s01;
+	
+	argument "-taskchain" "CH07TaskChain";
+	argument "-properties" "${project_loc:/org.eclipse.tea.samples.ch07.s01}/headless.properties";
+	workspace "${workspace_loc}/runtime-ws/ch07-hl";
+}

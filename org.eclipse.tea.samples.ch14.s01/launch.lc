@@ -1,0 +1,7 @@
+eclipse configuration Ch14_S01 {
+	product org.eclipse.sdk.ide;
+	
+	feature org.eclipse.sdk;
+	
+	workspace "${workspace_loc}/runtime-ch14s01";
+}
